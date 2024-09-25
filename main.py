@@ -9,6 +9,6 @@ import requests
 r = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
 j=('                Cuz Jacques says so and he controls the internet yo')
 
-print('               The current price of fucken Bitcoin is:   $' + r.json()['bpi']['USD']['rate'])
+print('               The current price of Bitcoin is:   $' + r.json()['bpi']['USD']['rate'])
 print(j)
 print (r.json()['time']['updated'])
